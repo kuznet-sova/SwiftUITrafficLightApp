@@ -13,6 +13,7 @@
 		8C12AB0324C623EB00703878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C12AB0224C623EB00703878 /* Assets.xcassets */; };
 		8C12AB0624C623EB00703878 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C12AB0524C623EB00703878 /* Preview Assets.xcassets */; };
 		8C12AB0924C623EB00703878 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C12AB0724C623EB00703878 /* LaunchScreen.storyboard */; };
+		8C12AB1124C62ED000703878 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C12AB1024C62ED000703878 /* ColorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8C12AB0524C623EB00703878 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8C12AB0824C623EB00703878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C12AB0A24C623EB00703878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C12AB1024C62ED000703878 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				8C12AAFC24C623E600703878 /* AppDelegate.swift */,
 				8C12AAFE24C623E600703878 /* SceneDelegate.swift */,
 				8C12AB0024C623E600703878 /* ContentView.swift */,
+				8C12AB1024C62ED000703878 /* ColorView.swift */,
 				8C12AB0224C623EB00703878 /* Assets.xcassets */,
 				8C12AB0724C623EB00703878 /* LaunchScreen.storyboard */,
 				8C12AB0A24C623EB00703878 /* Info.plist */,
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C12AB1124C62ED000703878 /* ColorView.swift in Sources */,
 				8C12AAFD24C623E600703878 /* AppDelegate.swift in Sources */,
 				8C12AAFF24C623E600703878 /* SceneDelegate.swift in Sources */,
 				8C12AB0124C623E600703878 /* ContentView.swift in Sources */,
@@ -289,6 +293,7 @@
 				DEVELOPMENT_TEAM = G39AAW7HHA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUITrafficLightApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.first.SwiftUITrafficLightApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,6 +314,7 @@
 				DEVELOPMENT_TEAM = G39AAW7HHA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUITrafficLightApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,7 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.first.SwiftUITrafficLightApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

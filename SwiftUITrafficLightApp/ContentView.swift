@@ -9,8 +9,58 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var buttonName = "START"
+    @State private var alphaRed: CGFloat = 0.3
+    @State private var alphaYellow: CGFloat = 0.3
+    @State private var alphaGreen: CGFloat = 0.3
+    @State private var currentColor: UIColor = .clear
+    
     var body: some View {
-        Text("Hello, World!")
+        ZStack {
+            Color(.black)
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+                ColorView(color: .red, alpha: alphaRed)
+                    .padding(.bottom, 10)
+                ColorView(color: .yellow, alpha: alphaYellow)
+                    .padding(.bottom, 10)
+                ColorView(color: .green, alpha: alphaGreen)
+                    .padding(.bottom)
+                
+                Spacer()
+                
+                Button(action: { self.trafficLightLogic() }) {
+                    Text(buttonName)
+                        .font(.title)
+                        .frame(width: 150, height: 50)
+                        .background(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(.white)
+                        .border(Color.white, width: 3)
+                        .cornerRadius(15)
+                }
+                .padding(.bottom, 10)
+            }
+            .padding()
+        }
+    }
+    
+    private func trafficLightLogic() {
+        buttonName = "NEXT"
+        
+        switch currentColor {
+        case .red:
+            alphaRed = 0.3
+            alphaYellow = 1
+            currentColor = .yellow
+        case .yellow:
+            alphaYellow = 0.3
+            alphaGreen = 1
+            currentColor = .green
+        default:
+            alphaGreen = 0.3
+            alphaRed = 1
+            currentColor = .red
+        }
     }
 }
 
