@@ -35,8 +35,9 @@ struct ContentView: View {
                         .frame(width: 150, height: 50)
                         .background(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/)
                         .foregroundColor(.white)
-                        .border(Color.white, width: 3)
                         .cornerRadius(15)
+                        .overlay(RoundedRectangle(cornerRadius: 20)
+                            .stroke(Color.white, lineWidth: 3))
                 }
                 .padding(.bottom, 10)
             }
