@@ -58,13 +58,10 @@
 		8C12AAFB24C623E500703878 /* SwiftUITrafficLightApp */ = {
 			isa = PBXGroup;
 			children = (
-				8C12AAFC24C623E600703878 /* AppDelegate.swift */,
-				8C12AAFE24C623E600703878 /* SceneDelegate.swift */,
-				8C12AB0024C623E600703878 /* ContentView.swift */,
-				8C12AB1024C62ED000703878 /* ColorView.swift */,
-				8C12AB0224C623EB00703878 /* Assets.xcassets */,
-				8C12AB0724C623EB00703878 /* LaunchScreen.storyboard */,
-				8C12AB0A24C623EB00703878 /* Info.plist */,
+				8C12AB1224C6538B00703878 /* ViewContents */,
+				8C12AB1324C653BE00703878 /* Storyboards */,
+				8C12AB1424C653D500703878 /* Sourse */,
+				8C12AB1524C653F200703878 /* SupportingFiles */,
 				8C12AB0424C623EB00703878 /* Preview Content */,
 			);
 			path = SwiftUITrafficLightApp;
@@ -76,6 +73,41 @@
 				8C12AB0524C623EB00703878 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8C12AB1224C6538B00703878 /* ViewContents */ = {
+			isa = PBXGroup;
+			children = (
+				8C12AB0024C623E600703878 /* ContentView.swift */,
+				8C12AB1024C62ED000703878 /* ColorView.swift */,
+			);
+			name = ViewContents;
+			sourceTree = "<group>";
+		};
+		8C12AB1324C653BE00703878 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8C12AB0724C623EB00703878 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8C12AB1424C653D500703878 /* Sourse */ = {
+			isa = PBXGroup;
+			children = (
+				8C12AB0224C623EB00703878 /* Assets.xcassets */,
+			);
+			path = Sourse;
+			sourceTree = "<group>";
+		};
+		8C12AB1524C653F200703878 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8C12AAFC24C623E600703878 /* AppDelegate.swift */,
+				8C12AAFE24C623E600703878 /* SceneDelegate.swift */,
+				8C12AB0A24C623EB00703878 /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +324,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUITrafficLightApp/Preview Content\"";
 				DEVELOPMENT_TEAM = G39AAW7HHA;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUITrafficLightApp/Info.plist;
+				INFOPLIST_FILE = SwiftUITrafficLightApp/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,7 +345,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUITrafficLightApp/Preview Content\"";
 				DEVELOPMENT_TEAM = G39AAW7HHA;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUITrafficLightApp/Info.plist;
+				INFOPLIST_FILE = SwiftUITrafficLightApp/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
