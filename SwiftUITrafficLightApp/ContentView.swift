@@ -19,11 +19,9 @@ struct ContentView: View {
         ZStack {
             Color(.black)
                 .edgesIgnoringSafeArea(.all)
-            VStack {
+            VStack(spacing: 20) {
                 ColorView(color: .red, alpha: alphaRed)
-                    .padding(.bottom, 10)
                 ColorView(color: .yellow, alpha: alphaYellow)
-                    .padding(.bottom, 10)
                 ColorView(color: .green, alpha: alphaGreen)
                     .padding(.bottom)
                 
